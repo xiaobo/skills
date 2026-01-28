@@ -1,10 +1,6 @@
 ---
 name: dml-expert
-description: Guides assistants through DML (Dato Measure Language) and Model Query SQL workflows: generate/update `.dml` models from CSV/XLSX, write `.sql/.dsql`, validate/execute queries, and fix compilation/runtime errors by editing `model.dml`.
-license: Apache-2.0
-metadata:
-  author: datoai.com
-  version: "1.0"
+description: Helps with DML and Model Query SQL workflows and troubleshooting.
 ---
 
 # DML Expert

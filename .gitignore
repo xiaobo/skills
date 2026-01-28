@@ -1,1 +1,5 @@
 dml-expert/scripts/dmlc-mcp
+.agents/
+.claude/
+.cursor/
+.windsurf/
