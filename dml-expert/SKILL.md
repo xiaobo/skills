@@ -1,6 +1,10 @@
 ---
 name: dml-expert
 description: Guides assistants through DML (Dato Measure Language) and Model Query SQL workflows: generate/update `.dml` models from CSV/XLSX, write `.sql/.dsql`, validate/execute queries, and fix compilation/runtime errors by editing `model.dml`.
+license: Apache-2.0
+metadata:
+  author: datoai.com
+  version: "1.0"
 ---
 
 # DML Expert
@@ -106,6 +110,7 @@ mvn clean package -DskipJpackage=false
 - **`model.dml`**: the “working” file for:
   - `column-macros` (aliases + computed row-level fields)
   - measures (aggregations / business metrics)
+- **`references/`**: read-only docs you can pull in on demand (syntax, patterns, troubleshooting).
 
 ## Error → fix (fast lookup)
 
@@ -127,15 +132,16 @@ mvn clean package -DskipJpackage=false
 
 ## Deep dives (read only when needed)
 
-- **Syntax**
-  - [Column macros](syntax/column-macros.md)
-  - [Measures](syntax/measures.md)
-  - [DML functions & modifiers](syntax/dml-functions.md)
-  - [Model Query SQL spec](syntax/model query sql-specification.md)
+- **References**
+  - **Syntax**
+    - [Column macros](references/syntax/column-macros.md)
+    - [Measures](references/syntax/measures.md)
+    - [DML functions & modifiers](references/syntax/dml-functions.md)
+    - [Model Query SQL spec](references/syntax/model%20query%20sql-specification.md)
 
-- **Examples**
-  - [Common query patterns](examples/common-patterns.md)
-  - [Business logic rules](examples/business-logic-rules.md)
+  - **Examples**
+    - [Common query patterns](references/examples/common-patterns.md)
+    - [Business logic rules](references/examples/business-logic-rules.md)
 
-- **Troubleshooting**
-  - [Compilation errors](troubleshooting/compilation-errors.md)
+  - **Troubleshooting**
+    - [Compilation errors](references/troubleshooting/compilation-errors.md)
